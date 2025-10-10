@@ -51,13 +51,4 @@ mv MineClone2-main mineclonia
 rm MineClone2-main.zip
 cd ~
 
-# startluanti.shの作成
-echo "startluanti.shの作成..."
-cat > startluanti.sh <<EOL
-#!/bin/bash
-cd luanti
-screen -S luanti ./bin/luantiserver --gameid mineclonia --world worlds/world --config ./luanti.conf
-EOL
-chmod +x startluanti.sh
-
 echo "完了！ startluanti.shを実行してサーバーを起動してください。"
