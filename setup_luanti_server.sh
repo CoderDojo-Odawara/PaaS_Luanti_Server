@@ -49,6 +49,9 @@ wget https://git.minetest.land/MineClone2/MineClone2/-/archive/main/MineClone2-m
 unzip MineClone2-main.zip
 mv MineClone2-main mineclonia
 rm MineClone2-main.zip
+
+#sh権限設定
 cd ~
+sudo chmod +x ./startluanti.sh
 
 echo "完了！ startluanti.shを実行してサーバーを起動してください。"
