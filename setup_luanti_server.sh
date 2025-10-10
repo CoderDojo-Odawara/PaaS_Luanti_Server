@@ -17,7 +17,7 @@ sudo netfilter-persistent reload
 # 依存パッケージの準備
 echo "依存パッケージの準備..."
 sudo apt update
-sudo apt install -y g++ ninja-build cmake libsqlite3-dev libcurl4-openssl-dev zlib1g-dev libgmp-dev libjsoncpp-dev libzstd-dev libncurses-dev screen
+sudo apt install -y g++ ninja-build cmake libsqlite3-dev libcurl4-openssl-dev zlib1g-dev libgmp-dev libjsoncpp-dev libzstd-dev libncurses-dev screen unzip
 
 # LuaJITのビルド
 echo "LuaJITのビルド..."
