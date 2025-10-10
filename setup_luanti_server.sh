@@ -58,11 +58,4 @@ cd ..
 timeout -s SIGINT 10 ./bin/luantiserver --gameid mineclonia --world worlds/world --config ./luanti.conf
 echo "load_mod_lwscratch = true" >> ./worlds/world/world.mt
 
-
-
-
-
-rm lwscratch.zip
-cd ~
-
 echo "完了！ startluanti.shを実行してサーバーを起動してください。"
