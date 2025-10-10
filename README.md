@@ -1,18 +1,9 @@
 # PaaS_Luanti_Server
 DojoPaaSにLuanti Serverを構築するためのスクリプト
 
+
+PaaSで使う場合
 ```shell
-sudo chmod +x ./setup_luanti_server.sh
-./setup_luanti_server.sh
-```
-
-```
-sudo chmod +x ./startluanti.sh
-./startluanti.sh
-```
-
-PaaaSで使う場合
-```
 cd ~
 curl -O https://raw.githubusercontent.com/CoderDojo-Odawara/PaaS_Luanti_Server/main/doitatonce.sh
 curl -O https://raw.githubusercontent.com/CoderDojo-Odawara/PaaS_Luanti_Server/main/setup_luanti_server.sh
