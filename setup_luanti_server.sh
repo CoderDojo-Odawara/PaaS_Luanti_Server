@@ -45,10 +45,9 @@ sed -i 's/default_privileges = basic_player/default_privileges = basic_player,te
 # ゲームとMODのダウンロード (オプション)
 echo "ゲームとMODのダウンロード (オプション)..."
 cd games
-wget https://git.minetest.land/MineClone2/MineClone2/-/archive/main/MineClone2-main.zip
-unzip MineClone2-main.zip
-mv MineClone2-main mineclonia
-rm MineClone2-main.zip
+wget -O mineclonia.zip https://content.luanti.org/packages/ryvnf/mineclonia/download/
+unzip mineclonia.zip
+rm mineclonia.zip
 cd ..
 cd mods
 wget -O lwscratch.zip https://content.luanti.org/packages/mt-mods/lwscratch/download/
