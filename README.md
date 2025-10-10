@@ -22,7 +22,7 @@ rm ./doitatonce.sh
 ```shell
 screen -r luanti
 ```
-でスクリーンには入って`Ctrl+C`
+でスクリーンに入って`Ctrl+C`
 
 また、一旦環境が構築できたら、以降は
 ```
