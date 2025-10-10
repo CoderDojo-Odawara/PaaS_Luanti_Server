@@ -17,5 +17,6 @@ curl -O https://raw.githubusercontent.com/CoderDojo-Odawara/PaaS_Luanti_Server/m
 curl -O https://raw.githubusercontent.com/CoderDojo-Odawara/PaaS_Luanti_Server/main/startluanti.sh
 sudo chmod +x ./setup_luanti_server.sh
 ./setup_luanti_server.sh
+sudo chmod +x ./startluanti.sh
 ./startluanti.sh
 ```
