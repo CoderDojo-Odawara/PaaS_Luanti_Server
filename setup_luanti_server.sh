@@ -55,6 +55,9 @@ wget -O lwscratch.zip https://content.luanti.org/packages/mt-mods/lwscratch/down
 unzip lwscratch.zip
 rm lwscratch
 cd ..
+
+#worldの作成とMODの適用設定
+echo "worldの作成とMODの適用設定"
 timeout -s SIGINT 10 ./bin/luantiserver --gameid mineclonia --world worlds/world --config ./luanti.conf
 echo "load_mod_lwscratch = true" >> ./worlds/world/world.mt
 
