@@ -23,3 +23,9 @@ rm ./doitatonce.sh
 screen -r luanti
 ```
 でスクリーンには入って`Ctrl+C`
+
+また、一旦環境が構築できたら、以降は
+```
+./startluanti.sh
+```
+のみで運用する。
