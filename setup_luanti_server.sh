@@ -17,7 +17,7 @@ sudo netfilter-persistent reload
 # 依存パッケージの準備
 echo "依存パッケージの準備..."
 sudo apt update
-sudo apt install -y g++ ninja-build cmake libsqlite3-dev libcurl4-openssl-dev zlib1g-dev libgmp-dev libjsoncpp-dev libzstd-dev libncurses-dev
+sudo apt install -y g++ ninja-build cmake libsqlite3-dev libcurl4-openssl-dev zlib1g-dev libgmp-dev libjsoncpp-dev libzstd-dev libncurses-dev screen
 
 # LuaJITのビルド
 echo "LuaJITのビルド..."
@@ -49,9 +49,5 @@ wget https://git.minetest.land/MineClone2/MineClone2/-/archive/main/MineClone2-m
 unzip MineClone2-main.zip
 mv MineClone2-main mineclonia
 rm MineClone2-main.zip
-
-#sh権限設定
-cd ~
-sudo chmod +x ./startluanti.sh
 
 echo "完了！ startluanti.shを実行してサーバーを起動してください。"
