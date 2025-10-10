@@ -49,5 +49,11 @@ wget https://git.minetest.land/MineClone2/MineClone2/-/archive/main/MineClone2-m
 unzip MineClone2-main.zip
 mv MineClone2-main mineclonia
 rm MineClone2-main.zip
+cd ..
+cd mods
+wget -O lwscratch.zip https://content.luanti.org/packages/mt-mods/lwscratch/download/
+unzip lwscratch.zip
+rm lwscratch.zip
+cd ~
 
 echo "完了！ startluanti.shを実行してサーバーを起動してください。"
