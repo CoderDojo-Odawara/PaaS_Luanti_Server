@@ -43,7 +43,7 @@ cp minetest.conf.example luanti.conf
 sed -i 's/default_privileges = basic_player/default_privileges = basic_player,teleport,fly/' luanti.conf
 
 # ゲームとMODのダウンロード (オプション)
-echo "ゲームのダウンロード (オプション)..."
+echo "ゲームとMODのダウンロード (オプション)..."
 cd games
 wget https://git.minetest.land/MineClone2/MineClone2/-/archive/main/MineClone2-main.zip
 unzip MineClone2-main.zip
@@ -53,6 +53,15 @@ cd ..
 cd mods
 wget -O lwscratch.zip https://content.luanti.org/packages/mt-mods/lwscratch/download/
 unzip lwscratch.zip
+rm lwscratch
+cd ..
+timeout -s SIGINT 10 ./bin/luantiserver --gameid mineclonia --world worlds/world --config ./luanti.conf
+echo "load_mod_lwscratch = true" >> ./worlds/world/world.mt
+
+
+
+
+
 rm lwscratch.zip
 cd ~
 
