@@ -50,14 +50,18 @@ unzip mineclonia.zip
 rm mineclonia.zip
 cd ..
 cd mods
+wget -O xcompat.zip https://content.luanti.org/packages/mt-mods/xcompat/download/
+unzip xcompat.zip
+rm xcompat.zip
 wget -O lwscratch.zip https://content.luanti.org/packages/mt-mods/lwscratch/download/
 unzip lwscratch.zip
-rm lwscratch
+rm lwscratch.zip
 cd ..
 
 #worldの作成とMODの適用設定
 echo "worldの作成とMODの適用設定"
 timeout -s SIGINT 10 ./bin/luantiserver --gameid mineclonia --world worlds/world --config ./luanti.conf
+echo "load_mod_xcompat = true" >> ./worlds/world/world.mt
 echo "load_mod_lwscratch = true" >> ./worlds/world/world.mt
 
 echo "完了！ startluanti.shを実行してサーバーを起動してください。"
