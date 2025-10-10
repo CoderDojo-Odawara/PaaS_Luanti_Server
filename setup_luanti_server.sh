@@ -43,16 +43,13 @@ cp minetest.conf.example luanti.conf
 sed -i 's/default_privileges = basic_player/default_privileges = basic_player,teleport,fly/' luanti.conf
 
 # ゲームとMODのダウンロード (オプション)
-echo "ゲームとMODのダウンロード (オプション)..."
+echo "ゲームのダウンロード (オプション)..."
 cd games
 wget https://git.minetest.land/MineClone2/MineClone2/-/archive/main/MineClone2-main.zip
 unzip MineClone2-main.zip
 mv MineClone2-main mineclonia
 rm MineClone2-main.zip
-cd ..
-cd mods
-git clone https://github.com/lgcollins/lwscratch.git
-cd ..
+cd ~
 
 # startluanti.shの作成
 echo "startluanti.shの作成..."
