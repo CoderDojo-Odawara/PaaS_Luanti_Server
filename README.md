@@ -1,0 +1,2 @@
+# PaaS_Luanti_Server
+DojoPaaSにLuanti Serverを構築するためのスクリプト
