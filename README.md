@@ -7,6 +7,7 @@ sudo chmod +x ./setup_luanti_server.sh
 ```
 
 ```
+sudo chmod +x ./startluanti.sh
 ./startluanti.sh
 ```
 
