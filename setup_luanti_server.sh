@@ -1,5 +1,5 @@
 #!/bin/bash
-chmod +x "$0"
+
 # SWAP領域の設定
 echo "SWAP領域の設定..."
 sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
