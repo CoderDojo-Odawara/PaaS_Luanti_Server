@@ -23,10 +23,7 @@ ninja
 cd ..
 
 # luanti.confの導入
-echo "luanti.confの作成と修正..."
-cp minetest.conf.example luanti.conf
-# 例: デフォルト権限の修正
-sed -i 's/default_privileges = basic_player/default_privileges = basic_player,teleport,fly/' luanti.conf
+curl -O https://raw.githubusercontent.com/CoderDojo-Odawara/PaaS_Luanti_Server/main/luanti.conf
 
 # ゲームとMODのダウンロード (オプション)
 echo "ゲームとMODのダウンロード (オプション)..."
