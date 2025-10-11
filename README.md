@@ -1,8 +1,17 @@
 # PaaS_Luanti_Server
 DojoPaaSにLuanti Serverを構築するためのスクリプト
 
+## 構築する環境
+- ゲームはmineclonia
+- 適用するMODはLWscratchのみ
+- 作成するワールド名は　`world`
+- ダメージなし、クリエイティブモード適用
+- 与えられる権限は標準権限＋ fly, teleport
+  
 
-## PaaSで使う場合
+## 手順
+
+### 必要なファイル類をダウンロード、実行権限付与
 ```shell
 cd ~
 curl -O https://raw.githubusercontent.com/CoderDojo-Odawara/PaaS_Luanti_Server/main/doitatonce.sh
@@ -11,12 +20,24 @@ curl -O https://raw.githubusercontent.com/CoderDojo-Odawara/PaaS_Luanti_Server/m
 sudo chmod +x ./doitatonce.sh
 sudo chmod +x ./setup_luanti_server.sh
 sudo chmod +x ./startluanti.sh
+```
+### SWAP領域作成　port開放（ここはサーバーを建ててから一回のみでOKなので手順に従ってｓｈファイルを削除するのが無難です）
+```shell
 ./doitatonce.sh
 rm ./doitatonce.sh
+```
+### Luanti環境構築
+```shell
 ./setup_luanti_server.sh
+```
+
+### Luantiサーバ起動
+```shell
 ./startluanti.sh
 ```
-サーバーが立ち上がったら　`Ctrl+A -> Ctrl+D` でスクリーン離脱。
+
+Luantiサーバが立ち上がったら　`Ctrl+A -> Ctrl+D` でスクリーン離脱。
+ここまできたらSSH接続を切ってもOK。
 
 サーバーを止める場合には
 ```shell
@@ -24,8 +45,15 @@ screen -r luanti
 ```
 でスクリーンに入って`Ctrl+C`
 
-また、一旦環境が構築できたら、以降は
+
+### 環境を一から作り直したいのであれば。。。
+Luantiサーバが停止している状態で
+```shell
+rm -rf luajit
+rm -rf luant
+./setup_luanti_server.sh
 ```
-./startluanti.sh
-```
-のみで運用する。
+
+#### おまけ
+作成されたworldは　`~/luanti/worlds/world` にあります。  
+こちらをバックアップすることでworldのレストア、移植等可能になります。
