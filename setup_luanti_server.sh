@@ -22,7 +22,7 @@ cmake .. -G Ninja -DBUILD_CLIENT=0 -DBUILD_SERVER=1 -DRUN_IN_PLACE=1 -DBUILD_UNI
 ninja
 cd ..
 
-# luanti.confの作成と修正
+# luanti.confの導入
 echo "luanti.confの作成と修正..."
 cp minetest.conf.example luanti.conf
 # 例: デフォルト権限の修正
