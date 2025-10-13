@@ -1,5 +1,6 @@
 # PaaS_Luanti_Server
-DojoPaaSにLuanti Serverを構築するためのスクリプト
+CoderDojo Japanから提供されている[DojoPaaS](https://github.com/coderdojo-japan/dojopaas)
+にLuanti Serverを自動構築するためのスクリプト
 
 ## 構築する環境
 - ゲームはmineclonia
