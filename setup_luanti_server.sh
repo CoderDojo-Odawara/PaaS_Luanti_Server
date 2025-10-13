@@ -23,6 +23,7 @@ ninja
 cd ..
 
 # luanti.confの導入
+echo "Luanti.confの導入..."
 curl -O https://raw.githubusercontent.com/CoderDojo-Odawara/PaaS_Luanti_Server/main/luanti.conf
 
 # ゲームとMODのダウンロード (オプション)
