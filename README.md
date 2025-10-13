@@ -22,12 +22,12 @@ sudo chmod +x ./doitatonce.sh
 sudo chmod +x ./setup_luanti_server.sh
 sudo chmod +x ./startluanti.sh
 ```
-### SWAP領域作成　port開放（ここはサーバーを建ててから一回のみでOKなので手順に従ってｓｈファイルを削除するのが無難です）
+### SWAP領域作成　port開放（ここはサーバーを建ててから一回のみでOKなのでshファイルを削除するのが無難）
 ```shell
 ./doitatonce.sh
 rm ./doitatonce.sh
 ```
-### Luanti環境構築
+### Luanti環境構築(時間がかかるので焦らず終わるまで待つ)
 ```shell
 ./setup_luanti_server.sh
 ```
