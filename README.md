@@ -2,13 +2,22 @@
 CoderDojo Japanから提供されている[DojoPaaS](https://github.com/coderdojo-japan/dojopaas)
 にLuanti Serverを自動構築するためのスクリプト
 
-## 構築する環境
-- ゲームはmineclonia
-- 適用するMODはLWscratchのみ
-- 作成するワールド名は　`world`
-- ダメージなし、クリエイティブモード適用
-- 与えられる権限は標準権限＋ fly, teleport
-  
+## できること
+- 最低限の環境整備(doitatonce.sh)
+  - 2GBのメモリキャッシュ作成
+  - inbound UDP 30000の開放
+- Luantiビルド、環境構築(setup_luanti_server.sh)
+  - ゲームはmineclonia
+  - 適用するMODはLWscratchのみ
+  - 作成するワールド名は　`world`
+  - ダメージなし、クリエイティブモード適用
+  - ユーザーに付与される権限は標準権限＋ fly, teleport
+- Luantiサーバーの起動管理(startluanti.sh)
+
+時間が取れれば変更していきたい事項
+1. .envを使って多少scriptの内容をカスタマイズできるようにする
+2. 設定済みluanti.confをpullするのではなくてオリジナルのmintest.conf.exampleから生成させるようにする
+3. Modの構成をもっと深化させる->少なくともホワイトリスト系のMODは入れたい
 
 ## 手順
 
