@@ -4,7 +4,7 @@ CoderDojo Japanから提供されている[DojoPaaS](https://github.com/coderdoj
 
 ## できること
 - 最低限の環境整備(doitatonce.sh)
-  - 2GBのメモリキャッシュ作成
+  - 2GBのSWAP領域作成
   - inbound UDP 30000の開放
 - Luantiビルド、環境構築(setup_luanti_server.sh)
   - ゲームはmineclonia
@@ -36,7 +36,7 @@ sudo chmod +x ./startluanti.sh
 ./doitatonce.sh
 rm ./doitatonce.sh
 ```
-### Luanti環境構築(時間がかかるので焦らず終わるまで待つ)
+### Luanti環境構築(シングルコアなので時間がかかる。焦らず終わるまで待つ)
 ```shell
 ./setup_luanti_server.sh
 ```
@@ -53,7 +53,7 @@ Luantiサーバが立ち上がったら　`Ctrl+A -> Ctrl+D` でスクリーン�
 ```shell
 screen -r luanti
 ```
-でスクリーンに入って`Ctrl+C`
+でスクリーンに入って`Ctrl+C`。なんか良く分からん、となったら `sudo reboot`でも良いっちゃ良い。
 
 
 ### 環境を一から作り直したいのであれば。。。
