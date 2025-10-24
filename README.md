@@ -2,6 +2,8 @@
 CoderDojo Japanから提供されている[DojoPaaS](https://github.com/coderdojo-japan/dojopaas)
 にLuanti Serverを自動構築するためのスクリプト
 
+READMEに記載の手順どおり、さくらのクラウド上で動作するDojoPaaS環境での利用を想定しています。
+
 ## できること
 - 最低限の環境整備(doitatonce.sh)
   - 2GBのSWAP領域作成
