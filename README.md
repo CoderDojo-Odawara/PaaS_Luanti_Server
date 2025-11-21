@@ -43,6 +43,7 @@ rm ./doitatonce.sh
 ./setup_luanti_server.sh
 ```
 
+
 ### Luantiサーバ起動
 ```shell
 ./startluanti.sh
@@ -68,4 +69,4 @@ rm -rf luant
 
 #### おまけ
 作成されたworldは　`~/luanti/worlds/world` にあります。  
-こちらをバックアップすることでworldのレストア、移植等可能になります。
+こちらをバックアップすることでworldのレストア、移植など可能です。
