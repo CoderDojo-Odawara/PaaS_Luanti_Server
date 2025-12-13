@@ -64,7 +64,7 @@ screen -r luanti
 Luantiサーバが停止している状態で
 ```shell
 rm -rf luajit
-rm -rf luant
+rm -rf luanti
 ./setup_luanti_server.sh
 ```
 
